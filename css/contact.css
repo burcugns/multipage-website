@@ -1,0 +1,124 @@
+/* Contact page css*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-section-main-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-div{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap:20px;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+/* Title */
+.contact-div h2{
+    justify-content: center;
+    display: flex;
+    font-size:20px;
+    color: var(--header-color);
+    font-weight: bold;
+    font-family: var(--font-family-secondary);
+}
+/* Contact Form */
+.contact-div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:30px;
+}
+.contact-div form label{
+    margin-bottom: 5px;
+    font-size: var(--font-size-secondary);
+    color: var(--header-color);
+    font-family: var(--font-family-secondary);
+}
+.contact-div form input, .contact-div form textarea{
+    padding: 10px;
+    padding-left:20px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #0c368a;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-secondary);
+    font-family: var(--font-family);
+}
+.contact-div form textarea{
+    resize: none;
+}
+
+.contact-div form button{
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+.contact-div form button:hover{
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+    transform: scale(1.1);
+   
+}
+/* Contact information */
+
+.info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:60px;
+}
+.info-div h2{
+    text-decoration: underline;
+    font-size:20px;
+    color: var(--header-color);
+    font-weight: bold;
+    font-family: var(--font-family);
+}
+
+.info-div a{
+    font-size: var(--font-size-secondary);
+    color: var(--header-color);
+    text-decoration: none;
+    margin: 5px;
+    font-family: var(--font-family-secondary);
+}
+.info-div a:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;
+    background-color: var(--third-color);
+    border-radius: 2px solid var(--border-radius);
+    
+}
+.info-div .tel-a::before{
+    content: "📞 ";
+}
+.info-div .email-a::before{
+    content: "📧 ";
+}
+
